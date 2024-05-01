@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    padding: 2%;
+    background: #1c1c1c;  
+    color: #fff;
+}
+
+.footer {
+    padding: 2%;
+    background: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
+
+
+h1, h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.slider-frame {
+    width: 50%;
+    height: auto;
+    margin: 0% auto 0;
+    overflow: hidden;
+    border-image: 0;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.texto {
+    text-align: center;
+    background: #1c1c1c;
+    color: white;
+}
+
+.suplementos {
+    display: inline-block;
+}
+
+.suplementos img {
+    width: 16.2%;
+    align-items: center;
+}
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 70px;
+    background: white;
+    color: #1c1c1c;
+    font-family: "Anton", sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: grey;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
